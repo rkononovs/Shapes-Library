@@ -1,3 +1,3 @@
 #pragma once
 
-// Nothing here - file ensures gihub makes the include folder
+// Nothing here - file ensures github makes the include folder
