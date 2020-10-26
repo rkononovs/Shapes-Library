@@ -35,9 +35,6 @@ int main() //!< Entry point for the application
 
 		window.clear();
 
-		// Do your drawing here
-		
-
 		window.display();
 	}
 }
