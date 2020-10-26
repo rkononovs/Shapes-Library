@@ -13,15 +13,17 @@
 * Contains the entry point of the application 
 */
 
-#include "SFML/Graphics.hpp"
+#include "Dot.h"
 
+Dot dot(500, 650);
 
 int main() //!< Entry point for the application
 {
 	sf::RenderWindow window(sf::VideoMode(1024, 800), "Lab Book 1 - Shapes");
 	window.setFramerateLimit(60);
 
-	
+	dot.makeDot();
+
 	while (window.isOpen())
 	{
 		sf::Event event;
@@ -34,6 +36,8 @@ int main() //!< Entry point for the application
 		}
 
 		window.clear();
+
+		window.draw(dot);
 
 		window.display();
 	}
