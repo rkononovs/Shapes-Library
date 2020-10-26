@@ -13,7 +13,7 @@ Dot::Dot(float fpX, float fpY)
 	position = sf::Vector2f(fpX, fpY);
 
 	shapesArr.setPrimitiveType(sf::Points);
-	shapesArr.resize(1);
+	shapesArr.resize(iSize);
 }
 
 Dot::~Dot()

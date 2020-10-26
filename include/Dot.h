@@ -10,4 +10,5 @@ public:
 	void makeDot();
 private:
 	sf::Vector2f position;
+	const int iSize = 1;
 };

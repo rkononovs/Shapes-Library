@@ -15,9 +15,11 @@
 
 #include "Dot.h"
 #include "Line.h"
+#include "Triangle.h"
 
 Dot dot(500, 400);
 Line line(sf::Vector2f(600, 750), sf::Vector2f(550, 600));
+Triangle triangle(sf::Vector2f(150, 400), sf::Vector2f(230, 600), sf::Vector2f(350, 400));
 
 int main() //!< Entry point for the application
 {
@@ -26,6 +28,7 @@ int main() //!< Entry point for the application
 
 	dot.makeDot();
 	line.makeLine();
+	triangle.makeTriangle();
 
 	while (window.isOpen())
 	{
@@ -42,6 +45,7 @@ int main() //!< Entry point for the application
 
 		window.draw(dot);
 		window.draw(line);
+		window.draw(triangle);
 
 		window.display();
 	}
