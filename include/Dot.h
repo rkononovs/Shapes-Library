@@ -8,8 +8,6 @@ public:
 	~Dot();
 
 	void makeDot();
-
-	sf::Vector2f getPosition();
 private:
-	float fX, fY;
+	sf::Vector2f position;
 };

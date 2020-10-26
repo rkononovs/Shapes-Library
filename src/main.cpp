@@ -15,7 +15,7 @@
 
 #include "Dot.h"
 
-Dot dot(500, 650);
+Dot dot(500, 400);
 
 int main() //!< Entry point for the application
 {
