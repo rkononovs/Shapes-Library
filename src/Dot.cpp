@@ -3,6 +3,9 @@
 Dot::Dot()
 {
 	position = sf::Vector2f(400, 400);
+
+	shapesArr.setPrimitiveType(sf::Points);
+	shapesArr.resize(1);
 }
 
 Dot::Dot(float fpX, float fpY)

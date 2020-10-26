@@ -12,5 +12,4 @@ public:
 protected:
 	sf::VertexArray shapesArr;
 	sf::RenderStates state;
-
 };

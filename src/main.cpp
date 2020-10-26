@@ -14,8 +14,10 @@
 */
 
 #include "Dot.h"
+#include "Line.h"
 
 Dot dot(500, 400);
+Line line(sf::Vector2f(600, 750), sf::Vector2f(550, 600));
 
 int main() //!< Entry point for the application
 {
@@ -23,6 +25,7 @@ int main() //!< Entry point for the application
 	window.setFramerateLimit(60);
 
 	dot.makeDot();
+	line.makeLine();
 
 	while (window.isOpen())
 	{
@@ -38,6 +41,7 @@ int main() //!< Entry point for the application
 		window.clear();
 
 		window.draw(dot);
+		window.draw(line);
 
 		window.display();
 	}
