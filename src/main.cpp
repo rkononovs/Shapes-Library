@@ -16,10 +16,14 @@
 #include "Dot.h"
 #include "Line.h"
 #include "Triangle.h"
+#include "Rectangle.h"
+#include "Square.h"
 
 Dot dot(500, 400);
 Line line(sf::Vector2f(600, 750), sf::Vector2f(550, 600));
 Triangle triangle(sf::Vector2f(150, 400), sf::Vector2f(230, 600), sf::Vector2f(350, 400));
+Rectangle rectangle(sf::Vector2f(200,150), 50, 100);
+Square square(sf::Vector2f(500, 150), 100);
 
 int main() //!< Entry point for the application
 {
@@ -29,6 +33,8 @@ int main() //!< Entry point for the application
 	dot.makeDot();
 	line.makeLine();
 	triangle.makeTriangle();
+	rectangle.makeRectangle();
+	square.makeSquare();
 
 	while (window.isOpen())
 	{
@@ -46,6 +52,8 @@ int main() //!< Entry point for the application
 		window.draw(dot);
 		window.draw(line);
 		window.draw(triangle);
+		window.draw(rectangle);
+		window.draw(square);
 
 		window.display();
 	}
