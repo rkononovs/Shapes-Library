@@ -12,4 +12,5 @@ public:
 protected:
 	sf::VertexArray shapesArr;
 	sf::RenderStates state;
+	const float pi = 3.141;
 };

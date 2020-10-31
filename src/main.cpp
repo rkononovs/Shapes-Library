@@ -18,12 +18,14 @@
 #include "Triangle.h"
 #include "Rectangle.h"
 #include "Square.h"
+#include "Arc.h"
 
 Dot dot(500, 400);
 Line line(sf::Vector2f(600, 750), sf::Vector2f(550, 600));
 Triangle triangle(sf::Vector2f(150, 400), sf::Vector2f(230, 600), sf::Vector2f(350, 400));
 Rectangle rectangle(sf::Vector2f(200,150), 50, 100);
 Square square(sf::Vector2f(500, 150), 100);
+Arc arc(sf::Vector2f(800, 150), sf::Vector2f(100,150));
 
 int main() //!< Entry point for the application
 {
@@ -35,6 +37,7 @@ int main() //!< Entry point for the application
 	triangle.makeTriangle();
 	rectangle.makeRectangle();
 	square.makeSquare();
+	arc.makeArc();
 
 	while (window.isOpen())
 	{
@@ -54,6 +57,7 @@ int main() //!< Entry point for the application
 		window.draw(triangle);
 		window.draw(rectangle);
 		window.draw(square);
+		window.draw(arc);
 
 		window.display();
 	}
