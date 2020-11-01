@@ -16,5 +16,4 @@ protected:
 	float fMaxTheta;
 	const int iSize = 60;
 	float fThetaIncrement = 2 * pi / iSize;
-	float n = 0;
 };
