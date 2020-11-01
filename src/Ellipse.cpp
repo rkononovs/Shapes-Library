@@ -1,4 +1,4 @@
-#include "..\include\Ellipse.h"
+#include "Ellipse.h"
 
 Ellipse::Ellipse()
 {
