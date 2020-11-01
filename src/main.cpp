@@ -25,7 +25,7 @@ Line line(sf::Vector2f(600, 750), sf::Vector2f(550, 600));
 Triangle triangle(sf::Vector2f(150, 400), sf::Vector2f(230, 600), sf::Vector2f(350, 400));
 Rectangle rectangle(sf::Vector2f(200,150), 50, 100);
 Square square(sf::Vector2f(500, 150), 100);
-Arc arc(sf::Vector2f(800, 150), sf::Vector2f(100,150));
+Arc arc(sf::Vector2f(800, 150), sf::Vector2f(100,150), 180);
 
 int main() //!< Entry point for the application
 {
