@@ -12,5 +12,4 @@ public:
 protected:
 	float fWidth, fHeight;
 	sf::Vector2f centre;
-	const int iSize = 4;
 };

@@ -6,20 +6,15 @@ Arc::Arc()
 	iRadiusY = 50;
 	centre = sf::Vector2f(700, 300);
 	fMaxTheta = 90 * (pi / 180);
-
-	shapesArr.setPrimitiveType(sf::LinesStrip);
-	shapesArr.resize(iSize);
 }
 
-Arc::Arc(sf::Vector2f middle, sf::Vector2f radius, float maxAngle)
+Arc::Arc(sf::Vector2f middle, sf::Vector2f radius, float maxAngle, int n) : Shape(n)
 {
 	iRadiusX = radius.x;
 	iRadiusY = radius.y;
 	centre = middle;
 	fMaxTheta = maxAngle * pi / 180;
-
-	shapesArr.setPrimitiveType(sf::LinesStrip);
-	shapesArr.resize(iSize);
+	iSize = n;
 }
 
 Arc::~Arc()

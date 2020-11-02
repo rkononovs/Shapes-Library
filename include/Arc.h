@@ -4,7 +4,7 @@ class Arc : public Shape
 {
 public:
 	Arc();
-	Arc(sf::Vector2f middle, sf::Vector2f radius, float maxAngle);
+	Arc(sf::Vector2f middle, sf::Vector2f radius, float maxAngle, int n);
 	~Arc();
 
 	void makeArc();
@@ -14,6 +14,5 @@ protected:
 	int iRadiusX, iRadiusY;
 	float fTheta = 0.f;
 	float fMaxTheta;
-	const int iSize = 60;
 	float fThetaIncrement = 2 * pi / iSize;
 };

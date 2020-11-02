@@ -10,5 +10,4 @@ public:
 	void makeLine();
 private:
 	sf::Vector2f pos1, pos2;
-	const int iSize = 2;
 };

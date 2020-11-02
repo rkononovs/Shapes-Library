@@ -5,19 +5,14 @@ Ellipse::Ellipse()
 	iRadiusX = 50;
 	iRadiusY = 25;
 	centre = sf::Vector2f(750, 400);
-
-	shapesArr.setPrimitiveType(sf::LinesStrip);
-	shapesArr.resize(iSize);
 }
 
-Ellipse::Ellipse(sf::Vector2f middle, sf::Vector2f radius)
+Ellipse::Ellipse(sf::Vector2f middle, sf::Vector2f radius, int n)
 {
+	iSize = n;
 	iRadiusX = radius.x;
 	iRadiusY = radius.y;
 	centre = middle;
-
-	shapesArr.setPrimitiveType(sf::LinesStrip);
-	shapesArr.resize(iSize);
 }
 
 Ellipse::~Ellipse()

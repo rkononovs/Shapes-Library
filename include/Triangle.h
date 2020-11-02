@@ -10,5 +10,4 @@ public:
 	void makeTriangle();
 private:
 	sf::Vector2f pos1, pos2, pos3;
-	const int iSize = 3;
 };
