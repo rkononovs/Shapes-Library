@@ -1,13 +1,14 @@
 #include "Ellipse.h"
 
-Ellipse::Ellipse()
+Ellipse::Ellipse() : Arc()
 {
+	iSize = 60;
 	iRadiusX = 50;
 	iRadiusY = 25;
 	centre = sf::Vector2f(750, 400);
 }
 
-Ellipse::Ellipse(sf::Vector2f middle, sf::Vector2f radius, int n)
+Ellipse::Ellipse(sf::Vector2f middle, sf::Vector2f radius, int n) : Arc()
 {
 	iSize = n;
 	iRadiusX = radius.x;

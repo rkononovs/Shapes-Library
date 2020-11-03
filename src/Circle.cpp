@@ -1,23 +1,19 @@
 #include "Circle.h"
 
-Circle::Circle()
+Circle::Circle() : Ellipse()
 {
+	iSize = 60;
 	iRadiusX = 50;
 	iRadiusY = iRadiusX;
 	centre = sf::Vector2f(750, 500);
-
-	shapesArr.setPrimitiveType(sf::LinesStrip);
-	shapesArr.resize(iSize);
 }
 
-Circle::Circle(sf::Vector2f middle, float radius)
+Circle::Circle(sf::Vector2f middle, float radius, int n) : Ellipse()
 {
+	iSize = n;
 	iRadiusX = radius;
 	iRadiusY = iRadiusX;
 	centre = middle;
-
-	shapesArr.setPrimitiveType(sf::LinesStrip);
-	shapesArr.resize(iSize);
 }
 
 Circle::~Circle()

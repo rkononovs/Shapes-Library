@@ -1,6 +1,6 @@
 #include "Arc.h"
 
-Arc::Arc()
+Arc::Arc() : Shape(60)
 {
 	iRadiusX = 100;
 	iRadiusY = 50;
