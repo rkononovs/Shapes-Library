@@ -8,7 +8,6 @@ public:
 	~Rectangle();
 
 	void makeRectangle();
-
 protected:
 	float fWidth, fHeight;
 	sf::Vector2f centre;

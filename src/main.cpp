@@ -57,6 +57,45 @@ int main() //!< Entry point for the application
 			}
 		}
 
+		if (event.type == sf::Event::KeyPressed)
+		{
+			switch (event.key.code)
+			{
+			case(sf::Keyboard::Left):
+			{
+				square.Rotate(-3);
+				break;
+			}
+			case(sf::Keyboard::Right):
+			{
+				square.Rotate(3);
+				break;
+			}
+			case(sf::Keyboard::Down):
+			{
+				square.Translate(0, 5);
+				break;
+			}
+			case(sf::Keyboard::Up):
+			{
+				square.Translate(0, -5);
+				break;
+			}
+			case(sf::Keyboard::Space):
+			{
+				square.Scale(1.05);
+				break;
+			}
+			case(sf::Keyboard::LShift):
+			{
+				square.Scale(0.95);
+				break;
+			}
+			default:
+				break;
+			}
+		}
+
 		window.clear();
 
 		window.draw(dot);

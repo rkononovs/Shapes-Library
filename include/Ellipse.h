@@ -1,6 +1,6 @@
 #pragma once
 #include "Arc.h"
-class Ellipse : public Arc //
+class Ellipse : public Arc
 {
 public:
 	Ellipse();
