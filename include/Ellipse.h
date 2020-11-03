@@ -1,11 +1,11 @@
 #pragma once
 #include "Arc.h"
-class Ellipse : public Arc
+class Ellipse : public Arc //!< Ellipse inherits from arc
 {
 public:
-	Ellipse();
-	Ellipse(sf::Vector2f middle, sf::Vector2f radius, int n);
-	~Ellipse();
+	Ellipse(); //!< Default constructor
+	Ellipse(sf::Vector2f middle, sf::Vector2f radius, int n); //!< Constructor initialising the position and size as well as resolution
+	~Ellipse(); //!< Default destructor
 
-	void makeEllipse();
+	void makeEllipse(); //!< Function that makes ellipse
 };

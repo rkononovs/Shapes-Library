@@ -3,11 +3,11 @@
 class Triangle : public Shape
 {
 public:
-	Triangle();
-	Triangle(sf::Vector2f xy1, sf::Vector2f xy2, sf::Vector2f xy3);
-	~Triangle();
+	Triangle(); //!< Default constructor
+	Triangle(sf::Vector2f xy1, sf::Vector2f xy2, sf::Vector2f xy3); //!< Constructor initialising the position
+	~Triangle(); //!< Default destructor
 
-	void makeTriangle();
+	void makeTriangle(); //!< Function that makes triangle
 private:
-	sf::Vector2f pos1, pos2, pos3;
+	sf::Vector2f pos1, pos2, pos3; //!< Variable that stores position
 };

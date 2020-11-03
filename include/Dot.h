@@ -3,11 +3,11 @@
 class Dot : public Shape
 {
 public:
-	Dot();
-	Dot(float fpX, float fpY);
-	~Dot();
+	Dot(); //!< Default constructor
+	Dot(float fpX, float fpY); //!< Constructor initialising the position
+	~Dot(); //!< Default destructor
 
-	void makeDot();
+	void makeDot(); //!< Function that makes dot
 private:
-	sf::Vector2f position;
+	sf::Vector2f position; //!< Variable that stores position
 };

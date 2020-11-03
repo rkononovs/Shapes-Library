@@ -1,18 +1,3 @@
-/*! \mainpage Lab 2 - Shapes
-*
-* This program gives you a basic SFML winow in which to draw your shapes.
-*
-* The classes and files you use are up to you.  
-*
-* This software froms the basis of your submission for lab book 1
-*/
-
-/*! \file main.cpp
-* \brief Main file for the application
-*
-* Contains the entry point of the application 
-*/
-
 #include "Dot.h"
 #include "Line.h"
 #include "Triangle.h"
@@ -22,6 +7,8 @@
 #include "Ellipse.h"
 #include "Circle.h"
 
+
+//! Instantiation of the shape objects using their constructor values.
 Dot dot(500, 400);
 Line line(sf::Vector2f(600, 750), sf::Vector2f(550, 600));
 Triangle triangle(sf::Vector2f(150, 400), sf::Vector2f(230, 600), sf::Vector2f(350, 400));
@@ -34,9 +21,10 @@ Circle circle(sf::Vector2f(800, 400), 100, 60);
 
 int main() //!< Entry point for the application
 {
-	sf::RenderWindow window(sf::VideoMode(1024, 800), "Lab Book 1 - Shapes");
+	sf::RenderWindow window(sf::VideoMode(1024, 800), "Shapes Library");
 	window.setFramerateLimit(60);
 
+	//! Creation of the shapes
 	dot.makeDot();
 	line.makeLine();
 	triangle.makeTriangle();
@@ -57,6 +45,7 @@ int main() //!< Entry point for the application
 			}
 		}
 
+		//! Comands to transform square or any other shape
 		if (event.type == sf::Event::KeyPressed)
 		{
 			switch (event.key.code)
@@ -81,7 +70,7 @@ int main() //!< Entry point for the application
 				square.Translate(0, -5);
 				break;
 			}
-			case(sf::Keyboard::Space):
+			case(sf::Keyboard::Space): // # I need to press Left ALT + SPACE to make it work, dunno why #
 			{
 				square.Scale(1.05);
 				break;
@@ -98,6 +87,7 @@ int main() //!< Entry point for the application
 
 		window.clear();
 
+		//! Drawing of shapes
 		window.draw(dot);
 		window.draw(line);
 		window.draw(triangle);
