@@ -1,0 +1,77 @@
+.TH "Arc" 3 "Tue Nov 3 2020" "Shapes Library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Arc
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBShape\fP\&.
+.PP
+Inherited by \fBEllipse\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBArc\fP ()"
+.br
+.RI "Default constructor\&. "
+.ti -1c
+.RI "\fBArc\fP (sf::Vector2f middle, sf::Vector2f radius, float maxAngle, int n)"
+.br
+.RI "Constructor initialising the position and size as well as resolution and cut off angle\&. "
+.ti -1c
+.RI "\fB~Arc\fP ()"
+.br
+.RI "Default destructor\&. "
+.ti -1c
+.RI "void \fBmakeArc\fP ()"
+.br
+.RI "Function that makes arc\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "sf::Vector2f \fBcentre\fP"
+.br
+.RI "Variable that stores position\&. "
+.ti -1c
+.RI "int \fBiRadiusX\fP"
+.br
+.ti -1c
+.RI "int \fBiRadiusY\fP"
+.br
+.RI "Variable that stores x and y radius\&. "
+.ti -1c
+.RI "float \fBfTheta\fP = 0\&.f"
+.br
+.RI "Variable that stores theta angle\&. "
+.ti -1c
+.RI "float \fBfMaxTheta\fP"
+.br
+.RI "Variable that stores maximum theta angle\&. "
+.ti -1c
+.RI "float \fBfThetaIncrement\fP = 2 * \fBpi\fP / \fBiSize\fP"
+.br
+.RI "Variable that stores and calculates theta angle increment\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Arc::Arc ()"
+
+.PP
+Default constructor\&. < Variable that calculates maximum theta angle based on cut-off angle
+.SH "Member Function Documentation"
+.PP 
+.SS "void Arc::makeArc ()"
+
+.PP
+Function that makes arc\&. < Calculate position for each point around middle
+.PP
+< If theta is bigger then cut-off angle stop incrementing theta
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Shapes Library from the source code\&.

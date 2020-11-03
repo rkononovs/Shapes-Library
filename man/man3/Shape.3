@@ -1,0 +1,94 @@
+.TH "Shape" 3 "Tue Nov 3 2020" "Shapes Library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shape
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits Drawable\&.
+.PP
+Inherited by \fBArc\fP, \fBDot\fP, \fBLine\fP, \fBRectangle\fP, and \fBTriangle\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBShape\fP ()"
+.br
+.RI "Default constructor\&. "
+.ti -1c
+.RI "\fBShape\fP (int points)"
+.br
+.RI "Constructor initialising the points drawn\&. "
+.ti -1c
+.RI "\fB~Shape\fP ()"
+.br
+.RI "Default destructor\&. "
+.ti -1c
+.RI "virtual void \fBdraw\fP (sf::RenderTarget &target, sf::RenderStates states) const"
+.br
+.RI "The main drawn method\&. "
+.ti -1c
+.RI "void \fBTranslate\fP (float x, float y)"
+.br
+.RI "Method that translates shape\&. "
+.ti -1c
+.RI "void \fBRotate\fP (float angle)"
+.br
+.RI "Method that rotates shape\&. "
+.ti -1c
+.RI "void \fBScale\fP (float scale)"
+.br
+.RI "Method that scales shape\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "sf::VertexArray \fBshapesArr\fP"
+.br
+.RI "Vertex array that stores points for the shapes\&. "
+.ti -1c
+.RI "sf::RenderStates \fBstate\fP"
+.br
+.RI "Render state that updates shape during transformations\&. "
+.ti -1c
+.RI "sf::Transform \fBtransform\fP"
+.br
+.RI "Transform that transforms shapes\&. "
+.ti -1c
+.RI "int \fBiSize\fP"
+.br
+.RI "Variable that stores how much points should be drawn\&. "
+.ti -1c
+.RI "const float \fBpi\fP = 3\&.141f"
+.br
+.RI "Constant Pi variable for calculations\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Shape::Shape ()"
+
+.PP
+Default constructor\&. < Resizes the array
+.PP
+< sets with what shapes will be drawn
+.SH "Member Function Documentation"
+.PP 
+.SS "void Shape::Rotate (float angle)"
+
+.PP
+Method that rotates shape\&. < Rotates shape around it's initial point
+.SS "void Shape::Scale (float scale)"
+
+.PP
+Method that scales shape\&. < Scales shape around it's initial point
+.SS "void Shape::Translate (float x, float y)"
+
+.PP
+Method that translates shape\&. < Translates each point of array
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Shapes Library from the source code\&.
